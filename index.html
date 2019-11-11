@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Light box</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+    <header id="showcase" class="header">
+            <h1>Vanilla Image Finder</h1>
+            
+    </header>
+    
+  <div class="main"> 
+     <form>
+       <label for="searchTerm" class="searchText">Search</label>
+        <br>
+       <input type="text" id="searchTerm" class="search" name="searchTerm" autocomplete="off">
+       <br>
+       <span class="errorMgs"></span>
+       <p class="searchText">Enter Quantity of Images</p>
+       <select  id="select" class="search">
+        <option value="4">4</option>
+        <option value="8">8</option>
+        <option value="10">10</option>
+        <option value="20">20</option>
+        <option value="25">25</option>
+        <option value="30">30</option>
+
+       </select>
+    
+         <button type="submit" class="btn">Submit</button>
+         <p class="result">YOUR SEARCH QUERY RESULTS:</p>
+      </form>
+    </div>
+   <br>
+  
+   <div class="loading">
+    
+        <img src="https://miro.medium.com/max/1600/1*kWggO1y6n1sdfGpxZaAAGA.gif" alt="" id="loadingImg">
+    </div>
+    
+  <section class="images"> </section>
+
+
+
+    <script src="js/main.js"></script>
+</body>
+</html>
